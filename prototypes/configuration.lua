@@ -23,10 +23,16 @@ centrifuges = {
     { order = "d-c", name = "centrifuge-mk3", health = 500, crafting_speed = 6, energy_con_kw = 600, energy_drain_kw = 40, pollution_per_min = 30, module_slots = 6 },
 }
 
+electric_furnaces = {
+    { order = "e-a", name = "electric-furnace-mk1", health = 400, crafting_speed = 3, energy_con_kw = 200, energy_drain_kw = 8, pollution_per_min = 2, module_slots = 3 },
+    { order = "e-b", name = "electric-furnace-mk2", health = 450, crafting_speed = 4, energy_con_kw = 240, energy_drain_kw = 12, pollution_per_min = 4, module_slots = 4 },
+    { order = "e-c", name = "electric-furnace-mk3", health = 500, crafting_speed = 6, energy_con_kw = 300, energy_drain_kw = 16, pollution_per_min = 8, module_slots = 6 },
+}
+
 labs = {
-    { order = "e-a", name = "lab-mk1", health = 200, research_speed = 2, energy_con_kw = 90, module_slots = 3 },
-    { order = "e-b", name = "lab-mk2", health = 250, research_speed = 4, energy_con_kw = 120, module_slots = 4 },
-    { order = "e-c", name = "lab-mk3", health = 300, research_speed = 6, energy_con_kw = 160, module_slots = 6 },    
+    { order = "f-a", name = "lab-mk1", health = 200, research_speed = 2, energy_con_kw = 90, module_slots = 3 },
+    { order = "f-b", name = "lab-mk2", health = 250, research_speed = 4, energy_con_kw = 120, module_slots = 4 },
+    { order = "f-c", name = "lab-mk3", health = 300, research_speed = 6, energy_con_kw = 160, module_slots = 6 },    
 }
 
 electric_mining_drills = {
