@@ -32,7 +32,7 @@ electric_furnaces = {
 labs = {
     { order = "f-a", name = "lab-mk1", health = 200, research_speed = 2, energy_con_kw = 90, module_slots = 3 },
     { order = "f-b", name = "lab-mk2", health = 250, research_speed = 4, energy_con_kw = 120, module_slots = 4 },
-    { order = "f-c", name = "lab-mk3", health = 300, research_speed = 6, energy_con_kw = 160, module_slots = 6 },    
+    { order = "f-c", name = "lab-mk3", health = 300, research_speed = 8, energy_con_kw = 200, module_slots = 6 },    
 }
 
 electric_mining_drills = {
