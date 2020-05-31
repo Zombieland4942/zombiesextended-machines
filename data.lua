@@ -1,4 +1,4 @@
-require("prototypes.configuration")
+require("configuration")
 
 require("prototypes.assemblers")
 require("prototypes.oil_refineries")
