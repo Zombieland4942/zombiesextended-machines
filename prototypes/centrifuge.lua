@@ -29,6 +29,16 @@ for x, centrifuge in pairs(centrifuges) do
     item.place_result = centrifuge.name
     item.order = centrifuge.order
     item.subgroup = "ds-assembly-machines"
+    
+    table.insert(data.raw["technology"][centrifuge.technology].effects, { type = "unlock-recipe", recipe = centrifuge.name })
 
-    data:extend({ entity, item })
+    data:extend({ entity, item,
+        {
+            type = "recipe",
+            name = centrifuge.name,
+            enabled = false,
+            ingredients = centrifuge.ingredients,
+            result = centrifuge.name
+        }
+    })
 end

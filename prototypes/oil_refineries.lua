@@ -66,5 +66,15 @@ for x, oil_refinery in pairs(oil_refineries) do
     item.order = oil_refinery.order
     item.subgroup = "ds-assembly-machines"
 
-    data:extend({ entity, item })
+    table.insert(data.raw["technology"][oil_refinery.technology].effects, { type = "unlock-recipe", recipe = oil_refinery.name })
+
+    data:extend({ entity, item,
+        {
+            type = "recipe",
+            name = oil_refinery.name,
+            enabled = false,
+            ingredients = oil_refinery.ingredients,
+            result = oil_refinery.name
+        }
+    })
 end

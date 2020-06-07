@@ -26,5 +26,15 @@ for x, lab in pairs(labs) do
     item.order = lab.order
     item.subgroup = "ds-assembly-machines"
 
-    data:extend({ entity, item })
+    table.insert(data.raw["technology"][lab.technology].effects, { type = "unlock-recipe", recipe = lab.name })
+
+    data:extend({ entity, item,
+        {
+            type = "recipe",
+            name = lab.name,
+            enabled = false,
+            ingredients = lab.ingredients,
+            result = lab.name
+        }
+    })
 end

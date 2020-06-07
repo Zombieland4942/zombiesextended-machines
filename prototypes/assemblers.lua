@@ -44,5 +44,14 @@ for x, assembler in pairs(assemblers) do
     item.order = assembler.order
     item.subgroup = "ds-assembly-machines"
 
-    data:extend({ entity, item })
+    table.insert(data.raw["technology"][assembler.technology].effects, { type = "unlock-recipe", recipe = assembler.name })
+    data:extend({ entity, item,
+        {
+            type = "recipe",
+            name = assembler.name,
+            enabled = false,
+            ingredients = assembler.ingredients,
+            result = assembler.name
+        }
+    })
 end

@@ -1,4 +1,5 @@
 require("configuration")
+require("prototypes.technologies")
 
 require("prototypes.assemblers")
 require("prototypes.oil_refineries")

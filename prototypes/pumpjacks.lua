@@ -28,5 +28,15 @@ for x, pumpjack in pairs(pumpjacks) do
     item.order = pumpjack.order
     item.subgroup = "ds-extraction"
 
-    data:extend({ entity, item })
+    table.insert(data.raw["technology"][pumpjack.technology].effects, { type = "unlock-recipe", recipe = pumpjack.name })
+
+    data:extend({ entity, item,
+        {
+            type = "recipe",
+            name = pumpjack.name,
+            enabled = false,
+            ingredients = pumpjack.ingredients,
+            result = pumpjack.name
+        }
+    })
 end

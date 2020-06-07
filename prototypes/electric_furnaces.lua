@@ -26,5 +26,15 @@ for x, electric_furnace in pairs(electric_furnaces) do
     item.order = electric_furnace.order
     item.subgroup = "ds-smelting"
 
-    data:extend({ entity, item })
+    table.insert(data.raw["technology"][electric_furnace.technology].effects, { type = "unlock-recipe", recipe = electric_furnace.name })
+
+    data:extend({ entity, item,
+        {
+            type = "recipe",
+            name = electric_furnace.name,
+            enabled = false,
+            ingredients = electric_furnace.ingredients,
+            result = electric_furnace.name
+        }
+    })
 end

@@ -68,5 +68,15 @@ for x, chemical_plant in pairs(chemical_plants) do
     item.order = chemical_plant.order
     item.subgroup = "ds-assembly-machines"
 
-    data:extend({ entity, item })
+    table.insert(data.raw["technology"][chemical_plant.technology].effects, { type = "unlock-recipe", recipe = chemical_plant.name })
+
+    data:extend({ entity, item,
+        {
+            type = "recipe",
+            name = chemical_plant.name,
+            enabled = false,
+            ingredients = chemical_plant.ingredients,
+            result = chemical_plant.name
+        }
+    })
 end

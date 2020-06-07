@@ -40,5 +40,15 @@ for x, electric_mining_drill in pairs(electric_mining_drills) do
     item.order = electric_mining_drill.order
     item.subgroup = "ds-extraction"
 
-    data:extend({ entity, item })
+    table.insert(data.raw["technology"][electric_mining_drill.technology].effects, { type = "unlock-recipe", recipe = electric_mining_drill.name })
+
+    data:extend({ entity, item,
+        {
+            type = "recipe",
+            name = electric_mining_drill.name,
+            enabled = false,
+            ingredients = electric_mining_drill.ingredients,
+            result = electric_mining_drill.name
+        }
+    })
 end
