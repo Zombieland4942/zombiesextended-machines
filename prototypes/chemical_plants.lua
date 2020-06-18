@@ -66,7 +66,7 @@ for x, chemical_plant in pairs(chemical_plants) do
     item.icon = "__darkstar-machines__/graphics/icons/" .. chemical_plant.name .. ".png"
     item.place_result = chemical_plant.name
     item.order = chemical_plant.order
-    item.subgroup = "ds-assembly-machines"
+    item.subgroup = "ds-assembly-machines-2"
 
     table.insert(data.raw["technology"][chemical_plant.technology].effects, { type = "unlock-recipe", recipe = chemical_plant.name })
 

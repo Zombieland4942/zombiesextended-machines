@@ -42,7 +42,7 @@ for x, assembler in pairs(assemblers) do
     item.icon = "__darkstar-machines__/graphics/icons/" .. assembler.name .. ".png"
     item.place_result = assembler.name
     item.order = assembler.order
-    item.subgroup = "ds-assembly-machines"
+    item.subgroup = "ds-assembly-machines-2"
 
     table.insert(data.raw["technology"][assembler.technology].effects, { type = "unlock-recipe", recipe = assembler.name })
     data:extend({ entity, item,

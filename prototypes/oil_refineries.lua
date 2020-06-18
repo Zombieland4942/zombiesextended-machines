@@ -64,7 +64,7 @@ for x, oil_refinery in pairs(oil_refineries) do
     item.icon = "__darkstar-machines__/graphics/icons/" .. oil_refinery.name .. ".png"
     item.place_result = oil_refinery.name
     item.order = oil_refinery.order
-    item.subgroup = "ds-assembly-machines"
+    item.subgroup = "ds-assembly-machines-2"
 
     table.insert(data.raw["technology"][oil_refinery.technology].effects, { type = "unlock-recipe", recipe = oil_refinery.name })
 

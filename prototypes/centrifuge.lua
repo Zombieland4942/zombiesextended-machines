@@ -28,7 +28,7 @@ for x, centrifuge in pairs(centrifuges) do
     item.icon = "__darkstar-machines__/graphics/icons/" .. centrifuge.name .. ".png"
     item.place_result = centrifuge.name
     item.order = centrifuge.order
-    item.subgroup = "ds-assembly-machines"
+    item.subgroup = "ds-assembly-machines-1"
     
     table.insert(data.raw["technology"][centrifuge.technology].effects, { type = "unlock-recipe", recipe = centrifuge.name })
 

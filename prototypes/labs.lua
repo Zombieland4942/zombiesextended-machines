@@ -24,7 +24,7 @@ for x, lab in pairs(labs) do
     item.icon = "__darkstar-machines__/graphics/icons/" .. lab.name .. ".png"
     item.place_result = lab.name
     item.order = lab.order
-    item.subgroup = "ds-assembly-machines"
+    item.subgroup = "ds-assembly-machines-1"
 
     table.insert(data.raw["technology"][lab.technology].effects, { type = "unlock-recipe", recipe = lab.name })
 

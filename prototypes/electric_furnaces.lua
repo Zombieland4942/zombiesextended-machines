@@ -24,7 +24,7 @@ for x, electric_furnace in pairs(electric_furnaces) do
     item.icon = "__darkstar-machines__/graphics/icons/" .. electric_furnace.name .. ".png"
     item.place_result = electric_furnace.name
     item.order = electric_furnace.order
-    item.subgroup = "ds-smelting"
+    item.subgroup = "ds-assembly-machines-1"
 
     table.insert(data.raw["technology"][electric_furnace.technology].effects, { type = "unlock-recipe", recipe = electric_furnace.name })
 
