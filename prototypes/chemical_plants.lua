@@ -8,7 +8,7 @@ for x, chemical_plant in pairs(chemical_plants) do
     item = util.table.deepcopy(item_base)
 
     entity.name = chemical_plant.name    
-    entity.icon = "__darkstar-machines__/graphics/icons/" .. chemical_plant.name .. ".png"
+    entity.icon = "__zombiesextended-machines__/graphics/icons/" .. chemical_plant.name .. ".png"
     entity.minable.result = chemical_plant.name
     entity.max_health = chemical_plant.health
     entity.crafting_speed = chemical_plant.crafting_speed
@@ -21,7 +21,7 @@ for x, chemical_plant in pairs(chemical_plants) do
         layers =
             {
                 {
-                    filename = "__darkstar-machines__/graphics/entity/" .. chemical_plant.name .. "/chemical-plant.png",
+                    filename = "__zombiesextended-machines__/graphics/entity/" .. chemical_plant.name .. "/chemical-plant.png",
                     width = 108,
                     height = 148,
                     frame_count = 24,
@@ -29,7 +29,7 @@ for x, chemical_plant in pairs(chemical_plants) do
                     shift = util.by_pixel(1, -9),
                     hr_version =
                     {
-                        filename = "__darkstar-machines__/graphics/entity/" .. chemical_plant.name .. "/hr-chemical-plant.png",
+                        filename = "__zombiesextended-machines__/graphics/entity/" .. chemical_plant.name .. "/hr-chemical-plant.png",
                         width = 220,
                         height = 292,
                         frame_count = 24,
@@ -63,7 +63,7 @@ for x, chemical_plant in pairs(chemical_plants) do
     )
 
     item.name = chemical_plant.name
-    item.icon = "__darkstar-machines__/graphics/icons/" .. chemical_plant.name .. ".png"
+    item.icon = "__zombiesextended-machines__/graphics/icons/" .. chemical_plant.name .. ".png"
     item.place_result = chemical_plant.name
     item.order = chemical_plant.order
     item.subgroup = "ds-assembly-machines-2"

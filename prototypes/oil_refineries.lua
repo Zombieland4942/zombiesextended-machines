@@ -8,7 +8,7 @@ for x, oil_refinery in pairs(oil_refineries) do
     item = util.table.deepcopy(item_base)
 
     entity.name = oil_refinery.name    
-    entity.icon = "__darkstar-machines__/graphics/icons/" .. oil_refinery.name .. ".png"
+    entity.icon = "__zombiesextended-machines__/graphics/icons/" .. oil_refinery.name .. ".png"
     entity.minable.result = oil_refinery.name
     entity.max_health = oil_refinery.health
     entity.crafting_speed = oil_refinery.crafting_speed
@@ -21,14 +21,14 @@ for x, oil_refinery in pairs(oil_refineries) do
         layers =
             {
                 {
-                    filename = "__darkstar-machines__/graphics/entity/" .. oil_refinery.name .. "/oil-refinery.png",
+                    filename = "__zombiesextended-machines__/graphics/entity/" .. oil_refinery.name .. "/oil-refinery.png",
                     width = 337,
                     height = 255,
                     frame_count = 1,
                     shift = {2.515625, 0.484375},
                     hr_version =
                     {
-                        filename = "__darkstar-machines__/graphics/entity/" .. oil_refinery.name .. "/hr-oil-refinery.png",
+                        filename = "__zombiesextended-machines__/graphics/entity/" .. oil_refinery.name .. "/hr-oil-refinery.png",
                         width = 386,
                         height = 430,
                         frame_count = 1,
@@ -61,7 +61,7 @@ for x, oil_refinery in pairs(oil_refineries) do
     )
 
     item.name = oil_refinery.name
-    item.icon = "__darkstar-machines__/graphics/icons/" .. oil_refinery.name .. ".png"
+    item.icon = "__zombiesextended-machines__/graphics/icons/" .. oil_refinery.name .. ".png"
     item.place_result = oil_refinery.name
     item.order = oil_refinery.order
     item.subgroup = "ds-assembly-machines-2"

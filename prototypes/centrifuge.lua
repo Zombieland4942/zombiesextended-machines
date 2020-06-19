@@ -8,7 +8,7 @@ for x, centrifuge in pairs(centrifuges) do
     item = util.table.deepcopy(item_base)
 
     entity.name = centrifuge.name    
-    entity.icon = "__darkstar-machines__/graphics/icons/" .. centrifuge.name .. ".png"
+    entity.icon = "__zombiesextended-machines__/graphics/icons/" .. centrifuge.name .. ".png"
     entity.minable.result = centrifuge.name
     entity.max_health = centrifuge.health
     entity.crafting_speed = centrifuge.crafting_speed
@@ -17,15 +17,15 @@ for x, centrifuge in pairs(centrifuges) do
     entity.energy_source.emissions_per_minute = centrifuge.pollution_per_min
     entity.module_specification.module_slots = centrifuge.module_slots
     
-    entity.idle_animation.layers[1].filename = "__darkstar-machines__/graphics/entity/" .. centrifuge.name .. "/centrifuge-C.png"
-    entity.idle_animation.layers[1].hr_version.filename = "__darkstar-machines__/graphics/entity/" .. centrifuge.name .. "/hr-centrifuge-C.png"
-    entity.idle_animation.layers[3].filename = "__darkstar-machines__/graphics/entity/" .. centrifuge.name .. "/centrifuge-B.png"
-    entity.idle_animation.layers[3].hr_version.filename = "__darkstar-machines__/graphics/entity/" .. centrifuge.name .. "/hr-centrifuge-B.png"
-    entity.idle_animation.layers[5].filename = "__darkstar-machines__/graphics/entity/" .. centrifuge.name .. "/centrifuge-A.png"
-    entity.idle_animation.layers[5].hr_version.filename = "__darkstar-machines__/graphics/entity/" .. centrifuge.name .. "/hr-centrifuge-A.png"
+    entity.idle_animation.layers[1].filename = "__zombiesextended-machines__/graphics/entity/" .. centrifuge.name .. "/centrifuge-C.png"
+    entity.idle_animation.layers[1].hr_version.filename = "__zombiesextended-machines__/graphics/entity/" .. centrifuge.name .. "/hr-centrifuge-C.png"
+    entity.idle_animation.layers[3].filename = "__zombiesextended-machines__/graphics/entity/" .. centrifuge.name .. "/centrifuge-B.png"
+    entity.idle_animation.layers[3].hr_version.filename = "__zombiesextended-machines__/graphics/entity/" .. centrifuge.name .. "/hr-centrifuge-B.png"
+    entity.idle_animation.layers[5].filename = "__zombiesextended-machines__/graphics/entity/" .. centrifuge.name .. "/centrifuge-A.png"
+    entity.idle_animation.layers[5].hr_version.filename = "__zombiesextended-machines__/graphics/entity/" .. centrifuge.name .. "/hr-centrifuge-A.png"
 
     item.name = centrifuge.name
-    item.icon = "__darkstar-machines__/graphics/icons/" .. centrifuge.name .. ".png"
+    item.icon = "__zombiesextended-machines__/graphics/icons/" .. centrifuge.name .. ".png"
     item.place_result = centrifuge.name
     item.order = centrifuge.order
     item.subgroup = "ds-assembly-machines-1"
