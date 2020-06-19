@@ -4,10 +4,11 @@
     "title": "Zombies Extended Machines",
     "author": "zombieland4942",
     "contact": "",
-    "homepage": "",
+    "homepage": "https://github.com/Zombieland4942/zombiesextended-machines",
     "dependencies": [
-        "base >= 0.18.24"
+        "base >= 0.18.31",
+        "zombiesextended-core >= 0.0.1"
     ],
-    "description": "",
+    "description": "ZombiesExtended Machiens adds all new High Teir Machines. This mod is still being tuned, please check the readme before upgrading the mod. Ps. No Zombies are added.",
     "factorio_version": "0.18"
 }
