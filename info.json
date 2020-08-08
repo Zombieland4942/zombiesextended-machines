@@ -1,12 +1,12 @@
 {
     "name": "zombiesextended-machines",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "title": "Zombies Extended Machines",
     "author": "zombieland4942",
     "contact": "",
     "homepage": "https://github.com/Zombieland4942/zombiesextended-machines",
     "dependencies": [
-        "base >= 0.18.31",
+        "base >= 0.18.44",
         "zombiesextended-core >= 0.0.1"
     ],
     "description": "ZombiesExtended Machiens adds all new High Teir Machines. This mod is still being tuned, please check the changelog before upgrading the mod. Ps. No Zombies are added.",
