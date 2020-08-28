@@ -64,7 +64,7 @@ electric_furnaces = {
 labs = {
     { order = "f-a", name = "lab-mk1", health = 200, research_speed = 2, energy_con_kw = 90, module_slots = 3, ingredients = { {"lab",2},{"complex-processing-unit",2} }, technology = "lab-mk1" },
     { order = "f-b", name = "lab-mk2", health = 250, research_speed = 4, energy_con_kw = 120, module_slots = 4, ingredients = { {"lab-mk1",2},{"complex-processing-unit",2} }, technology = "lab-mk2" },
-    { order = "f-c", name = "lab-mk3", health = 300, research_speed = 8, energy_con_kw = 200, module_slots = 6, ingredients = { {"lab-mk1",2},{"complex-processing-unit",2} }, technology = "lab-mk3" },    
+    { order = "f-c", name = "lab-mk3", health = 300, research_speed = 8, energy_con_kw = 200, module_slots = 6, ingredients = { {"lab-mk2",2},{"complex-processing-unit",2} }, technology = "lab-mk3" },    
 }
 
 electric_mining_drills = {
