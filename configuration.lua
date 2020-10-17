@@ -18,7 +18,7 @@ technologies = {
     { order = "a-b-c", name = "centrifuge-mk2", count = 400, time = 60, prerequisite = {"centrifuge-mk1"}, ingredients = science_t5 },
     { order = "a-b-c", name = "centrifuge-mk3", count = 500, time = 60, prerequisite = {"centrifuge-mk2"}, ingredients = science_t6 },
 
-    { order = "a-b-c", name = "electric-furnace-mk1", count = 300, time = 60, prerequisite = {"advanced-material-processing"}, ingredients = science_t4 },
+    { order = "a-b-c", name = "electric-furnace-mk1", count = 300, time = 60, prerequisite = {"advanced-material-processing-2"}, ingredients = science_t4 },
     { order = "a-b-c", name = "electric-furnace-mk2", count = 400, time = 60, prerequisite = {"electric-furnace-mk1"}, ingredients = science_t5 },
     { order = "a-b-c", name = "electric-furnace-mk3", count = 500, time = 60, prerequisite = {"electric-furnace-mk2"}, ingredients = science_t6 },
 

@@ -2,6 +2,7 @@
 Version: 1.0.1
 Date: ????
   Changes:
+    - Fixed Electronic Furnace MK1 Tech Requirements
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
 Date: 2020-08-28
