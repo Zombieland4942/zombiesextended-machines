@@ -34,25 +34,18 @@ technologies = {
 -- Need to mod some vanilla items in order for the upgrade planner to work
 data.raw["assembling-machine"]["assembling-machine-3"].fast_replaceable_group = "assembling-machine"
 data.raw["assembling-machine"]["assembling-machine-3"].next_upgrade = "assembling-machine-mk1"
-
 data.raw["assembling-machine"]["oil-refinery"].fast_replaceable_group = "oil-refinery"
 data.raw["assembling-machine"]["oil-refinery"].next_upgrade = "oil-refinery-mk1"
-
 data.raw["assembling-machine"]["chemical-plant"].fast_replaceable_group = "chemical-plant"
 data.raw["assembling-machine"]["chemical-plant"].next_upgrade = "chemical-plant-mk1"
-
 data.raw["assembling-machine"]["centrifuge"].fast_replaceable_group = "centrifuge"
 data.raw["assembling-machine"]["centrifuge"].next_upgrade = "centrifuge-mk1"
-
 data.raw["furnace"]["electric-furnace"].fast_replaceable_group = "furnace"
 data.raw["furnace"]["electric-furnace"].next_upgrade = "electric-furnace-mk1"
-
 data.raw["lab"]["lab"].fast_replaceable_group = "lab"
 data.raw["lab"]["lab"].next_upgrade = "lab-mk1"
-
 data.raw["mining-drill"]["electric-mining-drill"].fast_replaceable_group = "mining-drill"
 data.raw["mining-drill"]["electric-mining-drill"].next_upgrade = "electric-mining-drill-mk1"
-
 data.raw["mining-drill"]["pumpjack"].fast_replaceable_group = "pumpjack"
 data.raw["mining-drill"]["pumpjack"].next_upgrade = "pumpjack-mk1"
 
