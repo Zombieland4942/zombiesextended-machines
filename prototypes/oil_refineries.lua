@@ -16,6 +16,7 @@ for x, oil_refinery in pairs(oil_refineries) do
     entity.energy_source.drain = oil_refinery.energy_drain_kw .. "kW"
     entity.energy_source.emissions_per_minute = oil_refinery.pollution_per_min
     entity.module_specification.module_slots = oil_refinery.module_slots
+    entity.next_upgrade = oil_refinery.next_upgrade
     
     entity.animation = make_4way_animation_from_spritesheet({ 
         layers =

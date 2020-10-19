@@ -16,6 +16,7 @@ for x, chemical_plant in pairs(chemical_plants) do
     entity.energy_source.drain = chemical_plant.energy_drain_kw .. "kW"
     entity.energy_source.emissions_per_minute = chemical_plant.pollution_per_min
     entity.module_specification.module_slots = chemical_plant.module_slots
+    entity.next_upgrade = chemical_plant.next_upgrade
     
     entity.animation = make_4way_animation_from_spritesheet({ 
         layers =

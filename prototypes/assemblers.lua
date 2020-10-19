@@ -15,7 +15,8 @@ for x, assembler in pairs(assemblers) do
     entity.energy_usage = assembler.energy_con_kw .. "kW"
     entity.energy_source.drain = assembler.energy_drain_kw .. "kW"
     entity.energy_source.emissions_per_minute = assembler.pollution_per_min
-    entity.module_specification.module_slots = assembler.module_slots
+    entity.module_specification.module_slots = assembler.module_slots    
+    entity.next_upgrade = assembler.next_upgrade
     
     entity.fluid_boxes[1].pipe_picture.north.filename  = "__zombiesextended-machines__/graphics/entity/" .. assembler.name .. "/assembling-machine-pipe-N.png"
     entity.fluid_boxes[1].pipe_picture.north.hr_version.filename  = "__zombiesextended-machines__/graphics/entity/" .. assembler.name .. "/hr-assembling-machine-pipe-N.png"

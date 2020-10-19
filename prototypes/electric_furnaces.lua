@@ -16,6 +16,7 @@ for x, electric_furnace in pairs(electric_furnaces) do
     entity.energy_source.drain = electric_furnace.energy_drain_kw .. "kW"
     entity.energy_source.emissions_per_minute = electric_furnace.pollution_per_min
     entity.module_specification.module_slots = electric_furnace.module_slots
+    entity.next_upgrade = electric_furnace.next_upgrade
     
     entity.animation.layers[1].filename = "__zombiesextended-machines__/graphics/entity/" .. electric_furnace.name .. "/electric-furnace-base.png"
     entity.animation.layers[1].hr_version.filename = "__zombiesextended-machines__/graphics/entity/" .. electric_furnace.name .. "/hr-electric-furnace.png"

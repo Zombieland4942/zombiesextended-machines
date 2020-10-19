@@ -16,6 +16,7 @@ for x, centrifuge in pairs(centrifuges) do
     entity.energy_source.drain = centrifuge.energy_drain_kw .. "kW"
     entity.energy_source.emissions_per_minute = centrifuge.pollution_per_min
     entity.module_specification.module_slots = centrifuge.module_slots
+    entity.next_upgrade = centrifuge.next_upgrade
     
     entity.idle_animation.layers[1].filename = "__zombiesextended-machines__/graphics/entity/" .. centrifuge.name .. "/centrifuge-C.png"
     entity.idle_animation.layers[1].hr_version.filename = "__zombiesextended-machines__/graphics/entity/" .. centrifuge.name .. "/hr-centrifuge-C.png"

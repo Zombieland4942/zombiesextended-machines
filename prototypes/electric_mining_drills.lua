@@ -16,6 +16,7 @@ for x, electric_mining_drill in pairs(electric_mining_drills) do
     entity.resource_searching_radius = electric_mining_drill.mining_area
     entity.energy_source.emissions_per_minute = electric_mining_drill.pollution_per_min
     entity.module_specification.module_slots = electric_mining_drill.module_slots
+    entity.next_upgrade = electric_mining_drill.next_upgrade
     
     entity.graphics_set.animation.north.layers[1].filename = "__zombiesextended-machines__/graphics/entity/" .. electric_mining_drill.name .. "/electric-mining-drill-N.png"
     entity.graphics_set.animation.north.layers[1].width = 96

@@ -15,6 +15,7 @@ for x, pumpjack in pairs(pumpjacks) do
     entity.energy_usage = pumpjack.energy_con_kw .. "kW"
     entity.energy_source.emissions_per_minute = pumpjack.pollution_per_min
     entity.module_specification.module_slots = pumpjack.module_slots
+    entity.next_upgrade = pumpjack.next_upgrade
     
     entity.base_picture.sheets[1].filename = "__zombiesextended-machines__/graphics/entity/" .. pumpjack.name .. "/pumpjack-base.png"
     entity.base_picture.sheets[1].hr_version.filename = "__zombiesextended-machines__/graphics/entity/" .. pumpjack.name .. "/hr-pumpjack-base.png"

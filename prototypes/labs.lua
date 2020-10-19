@@ -14,6 +14,7 @@ for x, lab in pairs(labs) do
     entity.researching_speed = lab.research_speed
     entity.energy_usage = lab.energy_con_kw .. "kW"
     entity.module_specification.module_slots = lab.module_slots
+    entity.next_upgrade = lab.next_upgrade
     
     entity.on_animation.layers[1].filename = "__zombiesextended-machines__/graphics/entity/" .. lab.name .. "/lab.png"
     entity.on_animation.layers[1].hr_version.filename = "__zombiesextended-machines__/graphics/entity/" .. lab.name .. "/hr-lab.png"
