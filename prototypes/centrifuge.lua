@@ -28,9 +28,12 @@ for x, centrifuge in pairs(centrifuges) do
     item.name = centrifuge.name
     item.icon = "__zombiesextended-machines__/graphics/icons/" .. centrifuge.name .. ".png"
     item.place_result = centrifuge.name
-    item.order = centrifuge.order
-    item.subgroup = "ds-assembly-machines-1"
-    
+    item.order = item.order .. centrifuge.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then
+        item.subgroup = "ds-assembly-machines-1"
+    end
+
     table.insert(data.raw["technology"][centrifuge.technology].effects, { type = "unlock-recipe", recipe = centrifuge.name })
 
     data:extend({ entity, item,

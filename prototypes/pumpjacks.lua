@@ -26,8 +26,11 @@ for x, pumpjack in pairs(pumpjacks) do
     item.name = pumpjack.name
     item.icon = "__zombiesextended-machines__/graphics/icons/" .. pumpjack.name .. ".png"
     item.place_result = pumpjack.name
-    item.order = pumpjack.order
-    item.subgroup = "ds-extraction"
+    item.order = item.order .. pumpjack.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then
+        item.subgroup = "ds-extraction"
+    end
 
     table.insert(data.raw["technology"][pumpjack.technology].effects, { type = "unlock-recipe", recipe = pumpjack.name })
 

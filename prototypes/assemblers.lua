@@ -42,8 +42,11 @@ for x, assembler in pairs(assemblers) do
     item.name = assembler.name
     item.icon = "__zombiesextended-machines__/graphics/icons/" .. assembler.name .. ".png"
     item.place_result = assembler.name
-    item.order = assembler.order
-    item.subgroup = "ds-assembly-machines-2"
+    item.order = item.order .. assembler.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then
+        item.subgroup = "ds-assembly-machines-2"
+    end
 
     table.insert(data.raw["technology"][assembler.technology].effects, { type = "unlock-recipe", recipe = assembler.name })
     data:extend({ entity, item,

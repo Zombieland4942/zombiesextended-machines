@@ -94,8 +94,11 @@ for x, electric_mining_drill in pairs(electric_mining_drills) do
     item.name = electric_mining_drill.name
     item.icon = "__zombiesextended-machines__/graphics/icons/" .. electric_mining_drill.name .. ".png"
     item.place_result = electric_mining_drill.name
-    item.order = electric_mining_drill.order
-    item.subgroup = "ds-extraction"
+    item.order = item.order .. electric_mining_drill.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then
+        item.subgroup = "ds-extraction"
+    end
 
     table.insert(data.raw["technology"][electric_mining_drill.technology].effects, { type = "unlock-recipe", recipe = electric_mining_drill.name })
 

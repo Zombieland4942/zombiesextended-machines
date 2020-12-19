@@ -66,8 +66,11 @@ for x, chemical_plant in pairs(chemical_plants) do
     item.name = chemical_plant.name
     item.icon = "__zombiesextended-machines__/graphics/icons/" .. chemical_plant.name .. ".png"
     item.place_result = chemical_plant.name
-    item.order = chemical_plant.order
-    item.subgroup = "ds-assembly-machines-2"
+    item.order = item.order .. chemical_plant.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then
+        item.subgroup = "ds-assembly-machines-2"
+    end
 
     table.insert(data.raw["technology"][chemical_plant.technology].effects, { type = "unlock-recipe", recipe = chemical_plant.name })
 

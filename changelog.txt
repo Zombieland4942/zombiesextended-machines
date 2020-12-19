@@ -2,6 +2,8 @@
 Version: 1.0.4
 Date: ????
   Changes:
+    - Added new experimental setting to relocate items into their normal vanilla locations
+    - Updated all items in Machines to respect the new setting above
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.3
 Date: 2020-11-24

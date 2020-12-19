@@ -24,8 +24,11 @@ for x, lab in pairs(labs) do
     item.name = lab.name
     item.icon = "__zombiesextended-machines__/graphics/icons/" .. lab.name .. ".png"
     item.place_result = lab.name
-    item.order = lab.order
-    item.subgroup = "ds-assembly-machines-1"
+    item.order = item.order .. lab.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then
+        item.subgroup = "ds-assembly-machines-1"
+    end
 
     table.insert(data.raw["technology"][lab.technology].effects, { type = "unlock-recipe", recipe = lab.name })
 

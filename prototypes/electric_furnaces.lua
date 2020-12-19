@@ -23,9 +23,12 @@ for x, electric_furnace in pairs(electric_furnaces) do
 
     item.name = electric_furnace.name
     item.icon = "__zombiesextended-machines__/graphics/icons/" .. electric_furnace.name .. ".png"
-    item.place_result = electric_furnace.name
-    item.order = electric_furnace.order
-    item.subgroup = "ds-assembly-machines-1"
+    item.place_result = electric_furnace.name    
+    item.order = item.order .. electric_furnace.order
+
+    if settings.startup["zombies-use-seperate-tab"].value == true then
+        item.subgroup = "ds-assembly-machines-1"
+    end
 
     table.insert(data.raw["technology"][electric_furnace.technology].effects, { type = "unlock-recipe", recipe = electric_furnace.name })
 
