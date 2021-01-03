@@ -41,6 +41,7 @@ for x, centrifuge in pairs(centrifuges) do
             type = "recipe",
             name = centrifuge.name,
             enabled = false,
+            energy_required = centrifuge.craft_time,
             ingredients = centrifuge.ingredients,
             result = centrifuge.name
         }

@@ -78,7 +78,8 @@ for x, chemical_plant in pairs(chemical_plants) do
         {
             type = "recipe",
             name = chemical_plant.name,
-            enabled = false,
+            enabled = false,            
+            energy_required = chemical_plant.craft_time,
             ingredients = chemical_plant.ingredients,
             result = chemical_plant.name
         }

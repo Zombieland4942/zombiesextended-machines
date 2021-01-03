@@ -37,6 +37,7 @@ for x, lab in pairs(labs) do
             type = "recipe",
             name = lab.name,
             enabled = false,
+            energy_required = lab.craft_time,
             ingredients = lab.ingredients,
             result = lab.name
         }

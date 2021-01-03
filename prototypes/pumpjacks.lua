@@ -38,7 +38,8 @@ for x, pumpjack in pairs(pumpjacks) do
         {
             type = "recipe",
             name = pumpjack.name,
-            enabled = false,
+            enabled = false,            
+            energy_required = pumpjack.craft_time,
             ingredients = pumpjack.ingredients,
             result = pumpjack.name
         }

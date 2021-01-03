@@ -37,6 +37,7 @@ for x, electric_furnace in pairs(electric_furnaces) do
             type = "recipe",
             name = electric_furnace.name,
             enabled = false,
+            energy_required = electric_furnace.craft_time,
             ingredients = electric_furnace.ingredients,
             result = electric_furnace.name
         }

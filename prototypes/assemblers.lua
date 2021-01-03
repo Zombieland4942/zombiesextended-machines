@@ -53,7 +53,8 @@ for x, assembler in pairs(assemblers) do
         {
             type = "recipe",
             name = assembler.name,
-            enabled = false,
+            enabled = false,            
+            energy_required = assembler.craft_time,
             ingredients = assembler.ingredients,
             result = assembler.name
         }

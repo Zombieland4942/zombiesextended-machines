@@ -77,6 +77,7 @@ for x, oil_refinery in pairs(oil_refineries) do
             type = "recipe",
             name = oil_refinery.name,
             enabled = false,
+            energy_required = oil_refinery.craft_time,
             ingredients = oil_refinery.ingredients,
             result = oil_refinery.name
         }

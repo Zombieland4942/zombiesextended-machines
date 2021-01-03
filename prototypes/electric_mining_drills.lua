@@ -107,6 +107,7 @@ for x, electric_mining_drill in pairs(electric_mining_drills) do
             type = "recipe",
             name = electric_mining_drill.name,
             enabled = false,
+            energy_required = electric_mining_drill.craft_time,
             ingredients = electric_mining_drill.ingredients,
             result = electric_mining_drill.name
         }
