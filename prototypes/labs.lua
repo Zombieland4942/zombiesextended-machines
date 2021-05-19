@@ -30,6 +30,10 @@ for x, lab in pairs(labs) do
         item.subgroup = "ds-assembly-machines-1"
     end
 
+    if mods["improved-spacex-ftl"] then
+        table.insert(entity.inputs, "ftl-science-pack")
+    end    
+
     table.insert(data.raw["technology"][lab.technology].effects, { type = "unlock-recipe", recipe = lab.name })
 
     data:extend({ entity, item,
